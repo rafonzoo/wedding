@@ -1,0 +1,15 @@
+{
+  "common": {},
+  "auth": {
+    "signUp": "Daftar",
+    "signInTitle": "Masuk ke Monsta",
+    "signInDescription": "Manfaatkan waktu luangmu dengan mulai kerja sampingan.",
+    "signInWithGoogle": "Masuk dengan Google",
+    "signInWithApple": "Masuk dengan Apple",
+    "signInWithGithub": "Masuk dengan Github",
+    "signInWithFacebook": "Masuk dengan Facebook",
+    "signInWithTwitter": "Masuk dengan Twitter",
+    "signInTNC": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "notLogin": "Kamu belum masuk"
+  }
+}

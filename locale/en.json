@@ -1,0 +1,15 @@
+{
+  "common": {},
+  "auth": {
+    "signUp": "Sign up",
+    "signInTitle": "Enter to Monsta",
+    "signInDescription": "Let's time to work freely from anywhere with no cost.",
+    "signInWithGoogle": "Sign in with Google",
+    "signInWithApple": "Sign in with Apple",
+    "signInWithGithub": "Sign in with Github",
+    "signInWithFacebook": "Sign in with Facebook",
+    "signInWithTwitter": "Sign in with Twitter",
+    "signInTNC": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "notLogin": "You`re not logged in"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "unused-imports"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "semi": ["error", "never"],
+    // "quotes": ["error", "off"],
+    // "jsx-quotes": ["error", "off"],
+    "react/prop-types": "off",
+    "unused-imports/no-unused-imports": ["warn", { "vars": "local" }],
+
+    "@typescript-eslint/no-unused-vars": ["warn", { "vars": "local" }],
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      { "prefer": "type-imports" }
+    ],
+    "@typescript-eslint/no-empty-interface": "off",
+    "import/no-duplicates": ["error"],
+    "import/no-anonymous-default-export": "off",
+    "sort-imports": [
+      "warn",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        "allowSeparatedGroups": false
+      }
+    ],
+    "import/order": [
+      "warn",
+      {
+        "groups": ["type", ["external", "internal"]],
+        "newlines-between": "always",
+        "pathGroups": [
+          {
+            "pattern": "client/components/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "client/compounds/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "client/assets/**",
+            "group": "external",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["external", "type"],
+        "warnOnUnassignedImports": false,
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ]
+  }
+}

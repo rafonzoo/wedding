@@ -1,0 +1,18 @@
+# Wedding - Seed
+
+GET http://localhost:3000/api/test/seed
+
+###
+
+# Wedding - Remove
+
+GET http://localhost:3000/api/test/empty
+
+###
+
+GET https://picsum.photos/id/237/200/300
+
+
+###
+
+GET https://api.coindesk.com/v2/bpi/currentprice.json

@@ -1,0 +1,54 @@
+{
+  "name": "rfz-app.next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "update": "ncu --interactive --format group",
+    "prisma": "npx prisma generate && npx prisma migrate dev --name init",
+    "studio": "npx prisma studio",
+    "lint": "next lint && yarn tsc",
+    "lint:eslint": "npx eslint -c ./.eslintrc.json **/*.{ts,tsx} --fix",
+    "lint:prettier": "npx prettier **/*.{ts,tsx} --write --config ./.prettierrc.json",
+    "pre-commit": "npm run lint:eslint && npm run lint:prettier",
+    "prune-gone": "git checkout main && git pull origin main && git gone -pn && git gone -d"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "yarn pre-commit"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^4.5.14",
+    "@prisma/client": "^4.5.0",
+    "@reduxjs/toolkit": "^1.8.6",
+    "axios": "^1.1.3",
+    "cookie": "^0.5.0",
+    "next": "12.3.1",
+    "next-csrf": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.4",
+    "zod": "^3.19.1"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.5.1",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.24",
+    "@types/react-dom": "18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "8.26.0",
+    "eslint-config-next": "12.3.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "postcss": "^8.4.18",
+    "prettier": "^2.7.1",
+    "prisma": "^4.5.0",
+    "tailwindcss": "^3.2.2",
+    "typescript": "^4.8.4"
+  }
+}
